@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "about": "Acerca de",
+    "features": "Características",
+    "community": "Comunidad",
+    "whitepaper": "Documento Oficial",
+    "launchApp": "Lanzar App"
+  },
+  "hero": {
+    "tagline": "Arte del Tattoo. Autenticado. Conectado Globalmente.",
+    "scrollDown": "Desplázate para más"
+  },
+  "about": {
+    "title": "¿Por qué Inkfinity?",
+    "description": "Estamos revolucionando la industria del tatuaje llevando la tecnología blockchain a artistas y coleccionistas de todo el mundo.",
+    "imageAlt": "Ilustración del logo de Inkfinity",
+    "feature1": "Convierte tus diseños de tatuajes en NFTs autenticados en StarkNet",
+    "feature2": "Acepta USDC, STRK y ETH con precios en USD en tiempo real vía Pragma",
+    "feature3": "Gestiona tu portafolio y ganancias a través de un panel simplificado",
+    "feature4": "Únete a un mercado global de arte y diseños de tatuajes verificados",
+    "features": {
+      "ip": {
+        "title": "Protección NFT",
+        "description": "Asegura tus diseños de tatuajes como NFTs con autenticidad verificable"
+      },
+      "payments": {
+        "title": "Pagos Crypto",
+        "description": "Acepta USDC, STRK y ETH con precios en USD en tiempo real"
+      },
+      "dashboard": {
+        "title": "Panel de Artista",
+        "description": "Gestiona tu portafolio, ganancias y NFTs en un solo lugar"
+      },
+      "marketplace": {
+        "title": "Mercado NFT",
+        "description": "Crea y vende tus diseños globalmente como NFTs"
+      }
+    }
+  },
+  "features": {
+    "title": "Características Principales",
+    "description": "Experimenta el futuro del arte del tatuaje con nuestra plataforma blockchain",
+    "comingSoon": "Próximamente",
+    "crypto": {
+      "title": "Pagos Multi-Token",
+      "description": "Acepta USDC, STRK y ETH con liquidación instantánea"
+    },
+    "oracle": {
+      "title": "Oráculo Pragma",
+      "description": "Precios en USD en tiempo real para valuaciones estables"
+    },
+    "nft": {
+      "title": "Creación de NFTs",
+      "description": "Convierte tus diseños en activos digitales autenticados"
+    },
+    "dashboard": {
+      "title": "Panel de Artista",
+      "description": "Monitorea ganancias y gestiona tu portafolio digital"
+    },
+    "controller": {
+      "title": "Controlador Cartridge",
+      "description": "Billetera de contratos inteligentes con autenticación sin contraseña y claves de sesión para transacciones fluidas"
+    },
+    "bookings": {
+      "title": "Citas en Blockchain",
+      "description": "Sistema seguro de citas"
+    }
+  },
+  "community": {
+    "title": "¿Listo para unirte al futuro del arte del tatuaje?",
+    "description": "Ya seas artista o coleccionista, sé parte de la revolución digital del tatuaje.",
+    "earlyAccess": "Obtén Acceso Anticipado",
+    "viewDemo": "Ver Demo en Vivo"
+  },
+  "footer": {
+    "tagline": "El futuro del arte del tatuaje está aquí",
+    "whitepaper": "Documento Oficial",
+    "github": "GitHub",
+    "discord": "Discord",
+    "terms": "Términos",
+    "privacy": "Privacidad",
+    "rights": "Todos los derechos reservados.",
+    "telegram": "Telegram",
+    "X": "X"
+  }
+} 

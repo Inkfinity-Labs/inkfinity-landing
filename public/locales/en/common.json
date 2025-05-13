@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "about": "About",
+    "features": "Features",
+    "community": "Community",
+    "whitepaper": "Whitepaper",
+    "launchApp": "Launch App"
+  },
+  "hero": {
+    "tagline": "Tattoo Art. Permanently Authenticated. Globally Connected.",
+    "scrollDown": "Scroll down for more"
+  },
+  "about": {
+    "title": "Why Inkfinity?",
+    "description": "We're revolutionizing the tattoo industry by bringing blockchain technology to artists and collectors worldwide.",
+    "imageAlt": "Inkfinity logo illustration",
+    "feature1": "Turn your tattoo designs into authenticated NFTs on StarkNet",
+    "feature2": "Accept USDC, STRK, and ETH with real-time USD pricing via Pragma",
+    "feature3": "Manage your portfolio and earnings through a streamlined dashboard",
+    "feature4": "Join a global marketplace for verified tattoo art and designs",
+    "features": {
+      "ip": {
+        "title": "NFT Protection",
+        "description": "Secure your tattoo designs as NFTs with verifiable authenticity"
+      },
+      "payments": {
+        "title": "Crypto Payments",
+        "description": "Accept USDC, STRK, and ETH with real-time USD pricing"
+      },
+      "dashboard": {
+        "title": "Artist Dashboard",
+        "description": "Manage your portfolio, earnings, and NFTs in one place"
+      },
+      "marketplace": {
+        "title": "NFT Marketplace",
+        "description": "Mint and sell your designs globally as NFTs"
+      }
+    }
+  },
+  "features": {
+    "title": "Core Features",
+    "description": "Experience the future of tattoo art with our blockchain-powered platform",
+    "comingSoon": "Coming Soon",
+    "crypto": {
+      "title": "Multi-Token Payments",
+      "description": "Accept USDC, STRK, and ETH with instant settlement"
+    },
+    "oracle": {
+      "title": "Pragma Price Oracle",
+      "description": "Real-time USD pricing for stable valuations"
+    },
+    "nft": {
+      "title": "NFT Minting",
+      "description": "Turn your designs into authenticated digital assets"
+    },
+    "dashboard": {
+      "title": "Artist Dashboard",
+      "description": "Track earnings and manage your digital portfolio"
+    },
+    "controller": {
+      "title": "Cartridge Controller",
+      "description": "Smart contract wallet with passwordless authentication and session keys for seamless transactions"
+    },
+    "bookings": {
+      "title": "On-Chain Bookings",
+      "description": "Secure appointment system"
+    }
+  },
+  "community": {
+    "title": "Ready to join the future of tattoo art?",
+    "description": "Whether you're an artist or collector, be part of the digital tattoo revolution.",
+    "earlyAccess": "Get Early Access",
+    "viewDemo": "View Live Demo"
+  },
+  "footer": {
+    "tagline": "The future of tattoo art is here",
+    "whitepaper": "Whitepaper",
+    "github": "GitHub",
+    "discord": "Discord",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "rights": "All rights reserved.",
+    "telegram": "Telegram",
+    "X": "X"
+  }
+}  

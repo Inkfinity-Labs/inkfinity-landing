@@ -69,7 +69,12 @@
   "community": {
     "title": "Ready to join the future of tattoo art?",
     "description": "Whether you're an artist or collector, be part of the digital tattoo revolution.",
-    "earlyAccess": "Get Early Access",
+    "emailPlaceholder": "Enter your email",
+    "join": "Join Waitlist",
+    "joining": "Joining...",
+    "joined": "Joined!",
+    "joinSuccess": "You have been added to the waitlist!",
+    "joinError": "Failed to join waitlist",
     "viewDemo": "View Live Demo"
   },
   "footer": {

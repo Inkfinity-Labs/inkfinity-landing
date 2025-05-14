@@ -69,7 +69,12 @@
   "community": {
     "title": "¿Listo para unirte al futuro del arte del tatuaje?",
     "description": "Ya seas artista o coleccionista, sé parte de la revolución digital del tatuaje.",
-    "earlyAccess": "Obtén Acceso Anticipado",
+    "emailPlaceholder": "Ingresa tu correo",
+    "join": "Unete a la lista de espera",
+    "joining": "Uniéndose...",
+    "joined": "¡Unido!",
+    "joinSuccess": "¡Has sido agregado a la lista de espera!",
+    "joinError": "Error al unirse a la lista de espera",
     "viewDemo": "Ver Demo en Vivo"
   },
   "footer": {

@@ -205,4 +205,7 @@ export const BackgroundGradientAnimation = memo(({
       </div>
     </div>
   );
-}); 
+});
+
+// Add display name to fix ESLint react/display-name error
+BackgroundGradientAnimation.displayName = 'BackgroundGradientAnimation'; 

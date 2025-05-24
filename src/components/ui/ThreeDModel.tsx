@@ -137,23 +137,19 @@ function InkfinityModel(props: any) {
     transparent: true,
     opacity: 1
   });
-  
-  // Añadir animación suave - IMPORTANTE: Siempre llamamos a useFrame antes del try/catch
-  // para garantizar que se ejecuta en cada render sin importar el resultado de la carga
+
+  // Hook para cargar el modelo GLB (debe estar fuera de condicionales)
+  const gltf = useGLTF('/3d-models/Personaje Inkfinity.glb', true);
+
+  // Añadir animación suave
   useFrame((state) => {
     if (modelRef.current) {
-      // Movimiento suave arriba y abajo
-      modelRef.current.position.y = Math.sin(state.clock.getElapsedTime() * 0.7) * 0.1; // -1 para bajar la posición base
+      modelRef.current.position.y = Math.sin(state.clock.getElapsedTime() * 0.7) * 0.1;
     }
   });
 
-  // Carga el modelo GLB desde la carpeta public
-  // Usamos try/catch para manejar posibles errores de carga
-  let gltf;
-  try {
-    gltf = useGLTF('/3d-models/Personaje Inkfinity.glb', true);
-    
-    // Aplicar material blanco a todo el modelo
+  // Aplicar material blanco a todo el modelo
+  React.useEffect(() => {
     if (gltf && gltf.scene) {
       gltf.scene.traverse((child) => {
         if (child instanceof THREE.Mesh) {
@@ -161,17 +157,13 @@ function InkfinityModel(props: any) {
         }
       });
     }
-    
-    // Cuando el modelo se carga, llamamos al callback
+    // Llama al callback de carga si existe
     if (props.onLoad && gltf) {
       props.onLoad();
     }
-  } catch (error) {
-    console.error("Error cargando el modelo:", error);
-    return null;
-  }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [gltf]);
 
-  // Si tenemos el modelo, lo renderizamos
   if (gltf && gltf.scene) {
     return (
       <Selection>
@@ -181,7 +173,6 @@ function InkfinityModel(props: any) {
       </Selection>
     );
   }
-  
   // Si no hay modelo, no renderizamos nada
   return null;
 }

@@ -137,6 +137,15 @@ function InkfinityModel(props: any) {
     transparent: true,
     opacity: 1
   });
+  
+  // Añadir animación suave - IMPORTANTE: Siempre llamamos a useFrame antes del try/catch
+  // para garantizar que se ejecuta en cada render sin importar el resultado de la carga
+  useFrame((state) => {
+    if (modelRef.current) {
+      // Movimiento suave arriba y abajo
+      modelRef.current.position.y = Math.sin(state.clock.getElapsedTime() * 0.7) * 0.1; // -1 para bajar la posición base
+    }
+  });
 
   // Carga el modelo GLB desde la carpeta public
   // Usamos try/catch para manejar posibles errores de carga
@@ -161,14 +170,6 @@ function InkfinityModel(props: any) {
     console.error("Error cargando el modelo:", error);
     return null;
   }
-
-  // Añadir animación suave
-  useFrame((state) => {
-    if (modelRef.current) {
-      // Movimiento suave arriba y abajo
-      modelRef.current.position.y = Math.sin(state.clock.getElapsedTime() * 0.7) * 0.1; // -1 para bajar la posición base
-    }
-  });
 
   // Si tenemos el modelo, lo renderizamos
   if (gltf && gltf.scene) {

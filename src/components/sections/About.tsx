@@ -1,8 +1,14 @@
 import React, { useEffect } from 'react'
 import { useTranslation } from 'next-i18next'
 import { motion, useAnimation } from 'framer-motion'
-import Image from 'next/image'
+import dynamic from 'next/dynamic'
 import { useInView } from 'react-intersection-observer'
+
+// Carga dinámica del modelo 3D
+const ThreeDModel = dynamic(() => import('../ui/ThreeDModel'), { 
+  ssr: false,
+  loading: () => <div className="flex items-center justify-center h-full w-full text-white text-lg">Cargando visualizador 3D...</div>
+})
 
 export default function About() {
   const { t } = useTranslation()
@@ -78,18 +84,11 @@ export default function About() {
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div 
-            className="relative"
+            className="relative flex justify-start"
             variants={leftItemVariants}
           >
-            <div className="w-full h-[400px] md:h-[500px] relative rounded-lg overflow-hidden">
-              <Image
-                src="/images/inkfinity-man-logo.png"
-                alt={t('about.imageAlt')}
-                fill
-                className="object-contain p-6 brightness-0 invert"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                priority
-              />
+            <div className="w-[1500px] h-[900px] relative flex justify-end items-center z-10">
+              <ThreeDModel />
             </div>
           </motion.div>
 
